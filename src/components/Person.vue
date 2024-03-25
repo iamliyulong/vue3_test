@@ -8,6 +8,7 @@
     <br>
     <h2>资产：一辆{{ car.brand }},价值{{ car.price }}万</h2>
     <button @click="chagePrice">修改汽车的价格</button>
+    <button @click="chageCar">修改汽车</button>
     <br>
     <h2>爱好：</h2>
     <ul>
@@ -18,8 +19,7 @@
 </template>
 
 <script lang="ts" setup name="Person">
-import { ref } from 'vue';
-import { reactive } from 'vue';
+import { ref, reactive } from 'vue';
 
 let name = ref('张三')
 let age = ref(18)
@@ -45,6 +45,9 @@ function showTel() {
 }
 function chagePrice() {
   car.price += 10
+}
+function chageCar() {
+  Object.assign(car, { brand: '奔驰', price: 200 })
 }
 function changeFirstGame() {
   games[0].name = '御龙在天'
