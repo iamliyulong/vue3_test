@@ -61,4 +61,7 @@
   button {
     margin: 0 5px;
   }
+  li {
+    font-size: 20px;
+  }
 </style>
