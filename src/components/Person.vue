@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts" setup name="Person">
-import { ref, reactive } from 'vue';
+import { ref, reactive, toRefs, toRef } from 'vue';
 
 let name = ref('张三')
 let age = ref(18)
@@ -30,6 +30,16 @@ let games = reactive([
   { id: 'li02', name: '金铲铲' },
   { id: 'li03', name: '英雄联盟' }
 ])
+
+// toRefs使用
+let { brand, price } = toRefs(car)
+console.log(brand.value, price.value)
+// toRefs使用
+
+// toRef使用
+let jiage = toRef(car, 'price')
+console.log(jiage.value)
+// toRef使用
 
 // 方法
 function changeName() {
@@ -44,7 +54,10 @@ function showTel() {
   alert(tel)
 }
 function chagePrice() {
-  car.price += 10
+  // car.price += 10
+  // toRefs使用
+  price.value += 10
+  // toRefs使用
 }
 function chageCar() {
   Object.assign(car, { brand: '奔驰', price: 200 })
