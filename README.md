@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# vue3_test
-=======
 # vue3_test
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -34,4 +31,3 @@ npm run dev
 ```sh
 npm run build
 ```
->>>>>>> c1a74de (vue3练习项目)
