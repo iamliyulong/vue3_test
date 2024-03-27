@@ -46,7 +46,27 @@ function chageFullName() {
   padding: 20px;
 }
 
+/* 修改按钮边框和颜色 */
 button {
-  margin: 0 5px;
+  border: 1px solid #cccccc; /* 添加边框 */
+  background-color: #f5f5f5; /* 修改背景色 */
+  color: #1208a1; /* 修改字体颜色 */
+  padding: 8px 16px; /* 增加内边距 */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition: all 0.3s; /* 添加过渡效果 */
+  cursor: pointer; /* 修改光标样式 */
+  border-radius: 4px; /* 添加圆角 */
 }
+
+/* 鼠标悬停时改变按钮样式 */
+button:hover {
+  background-color: #dddddd; /* 改变背景色 */
+  color: #e35151; /* 改变字体颜色 */
+  border-color: #af1c1c; /* 改变边框颜色 */
+}
+
 </style>
