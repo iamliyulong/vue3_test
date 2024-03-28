@@ -45,7 +45,7 @@
   // 监视，情况四：监视响应式对象中的某个属性，且该属性是对象类型的，可以直接写，也能写函数，更推荐写函数
   watch(() => person.car, (newValue, oldValue) => {
     console.log('person.car变化了', newValue, oldValue)
-  },{deep:true})
+  }, { deep: true })
 </script>
 
 <style scoped>
