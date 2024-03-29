@@ -4,7 +4,8 @@
     <!-- <Person3/> -->
     <!-- <Person4/> -->
     <!-- <Person5 /> -->
-    <Person6 />
+    <!-- <Person6 /> -->
+    <Person7 />
 </template>
 
 <script lang="ts">
@@ -13,14 +14,15 @@
     // import Person3 from './components/Person3.vue'
     // import Person4 from './components/Person4.vue'
     // import Person5 from './components/Person5.vue'
-    import Person6 from './components/Person6.vue'
-export default {
-    name: 'App', //组件名
-    // components:{Person}
-    // components:{Person2}
-    // components:{Person3}
-    // components:{Person4}
-    // components: { Person5 }
-    components: { Person6 }
+    // import Person6 from './components/Person6.vue'
+    import Person7 from './components/Person7.vue'
+    export default {
+        name: 'App', //组件名
+        // components:{Person}
+        // components:{Person2}
+        // components:{Person3}
+        // components:{Person4}
+        // components: { Person5 }
+        components: { Person7 }
 }
 </script>
