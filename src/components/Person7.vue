@@ -44,7 +44,7 @@
 </script>
 
 <style scoped>
-.person6 {
+.person7 {
   background-color: skyblue;
   box-shadow: 0 0 10px;
   border-radius: 10px;
