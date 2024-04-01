@@ -6,10 +6,11 @@
     <!-- <Person5 /> -->
     <!-- <Person6 /> -->
     <!-- <Person7 /> -->
-    <Person8 />
+    <!-- <Person8 /> -->
+    <Person9 />
 </template>
 
-<script lang="ts">
+<script lang="ts" setup name="App">
     // import Person from './components/Person.vue'
     // import Person2 from './components/Person2.vue'
     // import Person3 from './components/Person3.vue'
@@ -17,15 +18,6 @@
     // import Person5 from './components/Person5.vue'
     // import Person6 from './components/Person6.vue'
     // import Person7 from './components/Person7.vue'
-    import Person8 from './components/Person8.vue'
-    export default {
-        name: 'App', //组件名
-        // components:{Person}
-        // components:{Person2}
-        // components:{Person3}
-        // components:{Person4}
-        // components: { Person5 }
-        // components: { Person7 }
-        components: { Person8 }
-}
+    // import Person8 from './components/Person8.vue'
+    import Person9 from './components/Person9.vue'
 </script>
