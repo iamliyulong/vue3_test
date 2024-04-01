@@ -29,8 +29,14 @@
   //   }
   // })
 
+
   watchEffect(() => {
-    if (temp.value >= 60 || height.value >= 80) {
+    // console.log('触发改变：', temp.value, height.value);
+    if (temp.value >= 60) {
+      // 给服务器发请求
+      console.log('请求服务器');
+    }
+    if (height.value >= 80) {
       // 给服务器发请求
       console.log('请求服务器');
     }
