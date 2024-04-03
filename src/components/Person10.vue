@@ -1,24 +1,31 @@
 <template>
-  <div class="person9">
-    <h1>中国</h1>
-    <h2 ref="title2">北京</h2>
-    <h3>故宫</h3>
-    <button @click="showLog">点我输出h2这个元素</button>
+  <div class="person10">
+    <ul>
+      <li v-for="item in list" :key="item.id">{{ item.name }}</li>
+    </ul>
   </div>
 </template>
 
-<script lang="ts" setup name="Person9">
-  import { ref } from 'vue';
+<script lang="ts" setup name="Person10">
+  import { type Persons } from '@/types';
+  import { withDefaults } from 'vue';
 
-  let title2 = ref()
+  // 只接收list
+  // defineProps(['list'])
 
-  function showLog() {
-    console.log(title2.value)
-  } 
+  // 接收list + 限制类型
+  // defineProps<{ list: Persons }>()
+
+  //  接收list + 限制类型 + 限制必要性 + 指定默认值
+  withDefaults(defineProps<{ list?: Persons }>(), { list: () => [{ id: '666', name: '孙悟空', age: 10000 }] })
+
+  // 接收list，同时将props保存起来
+  // let props = defineProps<{ list: Persons }>()
+  // console.log(props)
 </script>
 
 <style scoped>
-.person9 {
+.person10 {
   background-color: skyblue;
   box-shadow: 0 0 10px;
   border-radius: 10px;
