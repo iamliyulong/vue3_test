@@ -13,9 +13,9 @@ export default function () {
     }
 
     // 钩子-页面加载时获取狗图片
-    onMounted(()=>{
+    onMounted(() => {
         getDog()
     })
 
-    return {dogList, getDog}
+    return { dogList, getDog }
 }

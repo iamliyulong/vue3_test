@@ -5,7 +5,7 @@ export default function () {
     let bigSum = computed(() => {
         return sum.value * 10
     })
-    
+
     function add() {
         sum.value++
     }
@@ -15,5 +15,5 @@ export default function () {
         add()
     })
 
-    return{sum, bigSum, add}
+    return { sum, bigSum, add }
 }
