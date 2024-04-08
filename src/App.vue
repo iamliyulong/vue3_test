@@ -8,7 +8,8 @@
     <!-- <Person7 /> -->
     <!-- <Person8 /> -->
     <!-- <Person9 /> -->
-    <Person10 :list = 'personList'/>
+    <!-- <Person10 :list = 'personList'/> -->
+    <Person11/>
 </template>
 
 <script lang="ts" setup name="App">
@@ -21,14 +22,16 @@
     // import Person7 from './components/Person7.vue'
     // import Person8 from './components/Person8.vue'
     // import Person9 from './components/Person9.vue'
-    import Person10 from './components/Person10.vue'
-    import { reactive } from 'vue'
-    import { type Persons } from '@/types'
+    // import Person10 from './components/Person10.vue'
+    // import { reactive } from 'vue'
+    // import { type Persons } from '@/types'
 
-    let personList = reactive<Persons>([
-        { id: '1', name: '张三', age: 18 },
-        { id: '2', name: '李四', age: 20 },
-        { id: '3', name: '王五', age: 22 },
-    ])
+    // let personList = reactive<Persons>([
+    //     { id: '1', name: '张三', age: 18 },
+    //     { id: '2', name: '李四', age: 20 },
+    //     { id: '3', name: '王五', age: 22 },
+    // ])
+
+    import Person11 from './components/Person11.vue'
 
 </script>
