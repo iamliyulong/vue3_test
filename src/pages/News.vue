@@ -8,7 +8,7 @@
                 <!-- 第二种写法 -->
                 <RouterLink :to="{
                     name: 'NewsDetail',
-                    params: {
+                    query: {
                         id: news.id,
                         title: news.title,
                         content: news.content
