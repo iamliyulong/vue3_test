@@ -6,7 +6,7 @@
                 <!-- <RouterLink :to="`/news/detail/${news.id}/${news.title}/${news.content}`">{{ news.title }}</RouterLink> -->
 
                 <!-- 第二种写法 -->
-                <RouterLink :to="{
+                <RouterLink replace :to="{
                     name: 'NewsDetail',
                     query: {
                         id: news.id,
