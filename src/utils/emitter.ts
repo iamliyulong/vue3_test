@@ -4,6 +4,9 @@ import mitt from 'mitt'
 // 调用mitt得到emitter，emitter能：绑定事件、触发事件
 const emitter = mitt()
 
+// 暴露emitter
+export default emitter
+
 /* // 绑定事件
 emitter.on('test1',()=>{
   console.log('test1被调用了')
@@ -18,12 +21,9 @@ setInterval(() => {
   emitter.emit('test2')
 }, 1000);
 
+// 解绑事件
 setTimeout(() => {
   // emitter.off('test1')
   // emitter.off('test2')
   emitter.all.clear()
 }, 3000); */
-
-
-// 暴露emitter
-export default emitter
